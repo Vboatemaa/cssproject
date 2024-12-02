@@ -12,7 +12,7 @@
       <h2>Welcome , Vanessa</h2>
       <button class="compose">compose</button>
       <ul class="folders">
-        <li>Inbox</li>
+        <li>Inbox<span class= "unread-count">(3)</span></li>
         <li>Tagged</li>
         <li>Important</li>
         <li>Sent Mail</li>
@@ -20,23 +20,27 @@
         <li>Trash</li>
       </ul>
     </nav>
-    <header class="header">
-      <input type="text" class="search-bar" placeholder="Search emails">
-    </header>
-    <main class="content">
-      <section class="email-list">
-      <div class="email-list">
-        <p><strong>Sender</strong></p>
-        <p>Preview of the email</p>
-        <span>Date/Time</span>
-      </div>
-      </section>
-      <section class="email-view">
-      <h3>Subject Line</h3>
-      <p>From: sender@example.com</p>
-
-      </section>
-    </main>
+  <div class="main-content">
+  <div class="search-bar">
+    <input type="text" placeholder="search-bar">
+  </div>
+  </div>
+  <div class="email-list">
+    <div class="email-item">
+      <span class="sender">John Doe</span>
+      <span class="date">Nov 25, 2024</span>
+      <p class="preview">Hey,Just checking in</p>
+    </div>
+  </div>
+  <div class="email-content">
+    <h3 class="email-subject">Subject:Project Update</h3>
+    <p><strong>From:</strong>john.doe@example.com</p>
+    <p><strong>To:</strong>vboatemaa@example.com</p>
+<p class="email-body">will come back to this</p>
+<div class="reply-section">
+  <textarea placeholder="type your reply here"></textarea>
+  <button class="send-button"></button>
+</div>
   </div>
 </body>
 </html>
