@@ -1,18 +1,22 @@
 /*General Reset*/
 *{margin: 0
-  padding:0;
+  padding:0;  
  box-sizing:border-box;
- background-color:;
 }
-/* Body * /
-.body {
-font-family:arial,sans-serif;
-display: flex;
-height: 100vh;
+body {
+font-family:Arial,sans-serif;
+color:333;
+background-color: #EFDEFF;
 }
-/*sidebar*/
-.sidebar{width: 250px;
-background-color: #f76b8a;
+.container{
+    display: flex;
+    height: 100%;
+    flex-direction:row;
+}
+/*sidebar Styling*/
+.sidebar{
+width: 100%;
+background: #f76b8a;
 padding: 20px;
 display: flex;
 flex-direction: column;
@@ -38,36 +42,45 @@ list-style:none ;
 .folder-list li{
     padding: 10px 0;
     border-bottom: 1px solid #EFDEFF;
-cursor: pointer;
+margin: 10px;
 }
-/*main content*/
+/*main content styling*/
 main-content{flex-grow:1;
 display: flex;
 flex-direction:column;
-}
+padding: 20px;}
 .search-bar{
     padding: 10px;
-    border-bottom: #FF2B63;
-}
-.search-bar input{
-    width: 100%;
-    padding: 10px;
-    border: 1px;solid #FF2B63
-    border-radius: 5px;
+    border-bottom: #d7d2d3;
 }
 .email-list{
-    flex-grow:1;
+    flex: grow ;2 ;
     overflow: auto;
     padding: 20px;
     background-color:#FF2B63 ;
 }
+.email-view{
+    flew-direction:row;
+}
+.search-bar input{
+    width: 10px;
+    padding: 10px;
+    border: 1px;solid #FF2B63
+    border-radius: 5px;
+}
+.compose-button{
+    padding: 10px;
+    background: #7916f2;
+ text-align: center;
+}
+
 email-item{
     padding: 15px;
     border-bottom:1px solid #C89CFF;
     cursor: pointer;
 }
 .email-item:hover{
-    background-color: #eef;
+    background-color: rgb(205, 205, 222);
 }
 /*email content view*/
 .email-content{padding:20px;
@@ -86,11 +99,13 @@ email-subject{
     border:1px solid #eef
     border-radius:5px;
 }
-.send-btn{
-background-color: #C89CFF;
-color:#FF2B63
-border:none;
-padding:10px 20px;
-cursor:pointer;
-margin: top 10px;
-border: radius 5px;}
+/*Responsive Design*/
+@media(max-width:768px){
+.container{flex-direction: row;}
+}
+.sidebar{
+width: 100%;
+order:}
+.main-content{
+    order:1;
+}
