@@ -1,10 +1,24 @@
 /*General Reset*/
 *{margin: 0
-padding:0;
-box-sizing:border-box;
+  padding:0;
+ box-sizing:border-box;
+ 
 }
 /* Body * /
 body {
 font-family:arial,sans-serif;
 display: flex;
-height:100vh;
+height: 100vh;
+}
+/*sidebar*/
+.sidebar{width: 250px;
+background-color: #f76b8a;
+padding: 20px;
+display: flex;
+flex-direction: column;
+border-right: 1px solid #f76b8a;
+}
+vanessa-welcome h2{
+font-size: 18px;
+margin-bottom: 20px;
+}
