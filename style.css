@@ -2,10 +2,10 @@
 *{margin: 0
   padding:0;
  box-sizing:border-box;
- 
+ background-color:;
 }
 /* Body * /
-body {
+.body {
 font-family:arial,sans-serif;
 display: flex;
 height: 100vh;
@@ -16,9 +16,81 @@ background-color: #f76b8a;
 padding: 20px;
 display: flex;
 flex-direction: column;
-border-right: 1px solid #f76b8a;
+border-right: 1px solid #FF2B63;
 }
 vanessa-welcome h2{
 font-size: 18px;
 margin-bottom: 20px;
+background-color: #FF2B63;}
+.compose-btn {
+background-color:#C89CFF ;
+color:black;
+border:none;
+padding:10px;
+margin-bottom: 20px;
+cursor: pointer;
+text-align: center;
+border-radius: 5px;
 }
+.folder-list{
+list-style:none ;
+}
+.folder-list li{
+    padding: 10px 0;
+    border-bottom: 1px solid #EFDEFF;
+cursor: pointer;
+}
+/*main content*/
+main-content{flex-grow:1;
+display: flex;
+flex-direction:column;
+}
+.search-bar{
+    padding: 10px;
+    border-bottom: #FF2B63;
+}
+.search-bar input{
+    width: 100%;
+    padding: 10px;
+    border: 1px;solid #FF2B63
+    border-radius: 5px;
+}
+.email-list{
+    flex-grow:1;
+    overflow: auto;
+    padding: 20px;
+    background-color:#FF2B63 ;
+}
+email-item{
+    padding: 15px;
+    border-bottom:1px solid #C89CFF;
+    cursor: pointer;
+}
+.email-item:hover{
+    background-color: #eef;
+}
+/*email content view*/
+.email-content{padding:20px;
+}
+email-subject{
+    font-size: 20px;
+    margin-bottom:10px;
+}
+.reply-section{
+    margin-top: 20px;
+}
+.reply-section textarea{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border:1px solid #eef
+    border-radius:5px;
+}
+.send-btn{
+background-color: #C89CFF;
+color:#FF2B63
+border:none;
+padding:10px 20px;
+cursor:pointer;
+margin: top 10px;
+border: radius 5px;}
