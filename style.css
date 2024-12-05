@@ -1,31 +1,47 @@
 /*General Reset*/
-*{margin: 0
+*{margin: 0;
   padding:0;  
  box-sizing:border-box;
 }
 body {
 font-family:Arial,sans-serif;
 color:333;
-background-color: #EFDEFF;
+background: linear-gradient(101.9deg, rgb(253, 183, 220) 25%, rgb(240, 213, 190) 38.1%, rgb(249, 240, 206) 55.5%, rgb(253, 244, 210) 67.3%, rgb(222, 248, 226) 85.2%, rgb(200, 247, 242) 103.6%);background: # 101.9deg, rgb(253, 183, 220) 25%, rgb(240, 213, 190) 38.1%, rgb(249, 240, 206) 55.5%, rgb(253, 244, 210) 67.3%, rgb(222, 248, 226) 85.2%, rgb(200, 247, 242) 103.6%);
+height: 100vh;
+width: 100vw;
 }
 .container{
     display: flex;
     height: 100%;
+    width: 100%;
     flex-direction:row;
 }
 /*sidebar Styling*/
 .sidebar{
-width: 100%;
-background: #f76b8a;
+width: 20%;
+height: 100px;
+background: #edaedd;
+color: rgb(226, 232, 232);
 padding: 20px;
 display: flex;
 flex-direction: column;
-border-right: 1px solid #FF2B63;
+border-right: 1px solid #ecbfcb;
 }
-vanessa-welcome h2{
+.email-view{
+    flex-direction:row;
+    padding: 20px;
+    width: 50%;
+}
+.fashion{
+    padding:20px;
+    width:35%;
+    height:100%;
+    background-color: #C89CFF;
+}
+.user-welcome h2{
 font-size: 18px;
 margin-bottom: 20px;
-background-color: #FF2B63;}
+background-color: #d68df5;}
 .compose-btn {
 background-color:#C89CFF ;
 color:black;
@@ -45,7 +61,7 @@ list-style:none ;
 margin: 10px;
 }
 /*main content styling*/
-main-content{flex-grow:1;
+main-content{flex-grow:2;
 display: flex;
 flex-direction:column;
 padding: 20px;}
@@ -57,20 +73,17 @@ padding: 20px;}
     flex: grow ;2 ;
     overflow: auto;
     padding: 20px;
-    background-color:#FF2B63 ;
-}
-.email-view{
-    flew-direction:row;
+    background-color:#FF2B63;
 }
 .search-bar input{
     width: 10px;
     padding: 10px;
-    border: 1px;solid #FF2B63
+    border: 10px;solid #FF2B63
     border-radius: 5px;
 }
 .compose-button{
     padding: 10px;
-    background: #7916f2;
+    background: #f216cd;
  text-align: center;
 }
 
@@ -78,6 +91,7 @@ email-item{
     padding: 15px;
     border-bottom:1px solid #C89CFF;
     cursor: pointer;
+    background: #EFDEFF;
 }
 .email-item:hover{
     background-color: rgb(205, 205, 222);
@@ -101,11 +115,6 @@ email-subject{
 }
 /*Responsive Design*/
 @media(max-width:768px){
-.container{flex-direction: row;}
-}
-.sidebar{
-width: 100%;
-order:}
-.main-content{
-    order:1;
+.container{
+    flex-direction: column;
 }
